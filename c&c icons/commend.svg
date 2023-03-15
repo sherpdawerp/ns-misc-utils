@@ -34,42 +34,19 @@
 			</feDiffuseLighting>
 			
 			<feComposite in="light" in2="SourceAlpha" operator="in" result="glowWhite"/>
-			
 			<feComposite in="SourceGraphic" in2="glowWhite" operator="arithmetic" k1="0" k2="1" k3="2.5" k4="0" />
 		</filter>
 		
-		<linearGradient id="background" gradientTransform="rotate(45)">
-			<stop offset="0.5" stop-color="#EEE"/>
-			<stop offset="1" stop-color="#DDF"/>
-		</linearGradient>
-		
-		<filter id="smoke" x="-50%" y="-50%" width="200%" height="200%">
-			<feGaussianBlur in="SourceGraphic" stdDeviation="400" result="blur"/>
-			<feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" seed="0"/>
-			<feDisplacementMap in="blur" scale="500"/>
+		<filter id="marbleEffect" x="0%" y="0%" width="400%" height="600%">
+			<feTurbulence baseFrequency="0.005" />
+			<feColorMatrix type="matrix" values="1 1 1 0 0 1 1 1 0 0 1 1 1 0 0 0 1 0 1 0" result="marble"/>
+			<feComposite in="SourceGraphic" in2="marble" operator="arithmetic" k1="0" k2="1" k3="3" k4="0" />
 		</filter>
 		
-		<linearGradient id="smokeColor" gradientTransform="rotate(135)">
-			<stop offset="0" stop-color="#11F" stop-opacity="0.07"/>
-			<stop offset="1" stop-color="#111" stop-opacity="0.07"/>
-		</linearGradient>
-		
-		<linearGradient id="smokeColorDark" gradientTransform="rotate(135)">
-			<stop offset="0" stop-color="#118" stop-opacity="0.3"/>
-			<stop offset="1" stop-color="#111" stop-opacity="0.3"/>
-		</linearGradient>
-		
-		<filter id="pathRandomiseHoriz" x="0%" y="0%" width="400%" height="600%">
-			<feTurbulence type="turbulence" baseFrequency="0.0002 0.004" numOctaves="1" seed="0" result="horizNoise" />
-			<feColorMatrix values="0.1 0 0.3 0 0 0 0.1 0.3 0 0 0 0 1 0 0 0 0 0 1 0" in="horizNoise" result="blueBlur"/>
-			<feColorMatrix values="0 0 0 -30 0.03 0 0 0 -30 0.03 0 0 0 -30 0.03 0 0 0 -30 0.3" in="horizNoize" result="blackLine"/>
-			<feComposite in="blueBlur" in2="blackLine" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
-		</filter>
-		
-		<mask id="waveAreaHoriz">
+		<mask id="marbleEffectArea">
 			<radialGradient id="maskGradient" cx="60%" cy="60%">
-				<stop offset="0.2" stop-color="#000"/>
-				<stop offset="0.3" stop-color="#FFF"/>
+				<stop offset="0.25" stop-color="#999"/>
+				<stop offset="0.4" stop-color="#FFF"/>
 			</radialGradient>
 		
 			<rect x="-100%" y="-100%" width="250%" height="250%" fill="url(#maskGradient)"/>
@@ -78,14 +55,24 @@
 		<mask id="roundCorners">
 			<rect rx="200" ry="200" width="100%" height="100%" fill="white"/>
 		</mask>
+		
+		<linearGradient id="background" gradientTransform="rotate(45)">
+			<stop offset="0.6" stop-color="#000"/>
+			<stop offset="1" stop-color="#007"/>
+		</linearGradient>
+		
+		<filter id="fadeOut" x="-10%" y="-10%" width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="0.3" result="blur2"/>
+			<feDiffuseLighting in="blur2" surfaceScale="2" specularConstant="0.5" specularExponent="10" result="specFade" lighting-color="#FFF">
+				<fePointLight x="700" y="450" z="5"/>
+			</feDiffuseLighting>
+			<feComposite in="specFade" in2="SourceAlpha" operator="in" result="specFade2"/>
+			<feComposite in="SourceGraphic" in2="specFade2" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
+		</filter>
 	</defs>
 
 	<g mask="url(#roundCorners)">
-		<rect fill="url(#background)" width="100%" height="100%"/>
-		<rect opacity="1" x="-100%" y="-100%" width="300%" mask="url(#waveAreaHoriz)" height="250%" filter="url(#pathRandomiseHoriz)" transform="rotate(15)" transform-origin="center"/>
-		<!-- <circle fill="url(#smokeColorDark)" filter="url(#smoke)" r="20%" cx="20%" cy="70%"/>
-		<circle fill="url(#smokeColorDark)" filter="url(#smoke)" r="20%" cx="90%" cy="20%"/> -->
-		<circle fill="url(#smokeColor)" filter="url(#smoke)" r="60%" cx="50%" cy="50%"/>
+		<rect x="-100%" y="-100%" width="300%" mask="url(#marbleEffectArea)" height="250%" opacity="0.3" fill="url(#background)" filter="url(#marbleEffect)"/>
 	</g>
 	<g transform="translate(-150, -650) scale(10)" fill="#BF9E32" filter="url(#metallic) url(#bevel) url(#glow) url(#dropshadow)">
 		<g transform="matrix(.30812 0 0 .30812 -7.8428 -9.6655)">
