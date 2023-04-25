@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 330 200" width="330" height="200" xmlns="http://www.w3.org/2000/svg">
+	<rect width="100%" height="100%" fill="#000"/>
+	
+	<path id="a" d="
+	M270,36 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,34 l30,30 l0,28 a1,1,0,0,0,0,2 a1,1,0,0,0,0,-2 m0,37 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,2 l-2,2 l-2,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 m-37,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 l-82,0 l-4,4 l-96,0 l-4,-4 l-73,0
+	M0,139 l11,0 l4,-4 l0,-94 l25,-25 l0,-16
+	M0,30 l19,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 m52,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 l1,0 l10,10 l90,0 l10,-10 l148,0
+	M330,134 l-45,0 l-20,20 l0,56
+	M275,36 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,32 l30,30 l0,30 a1,1,0,0,0,0,2 a1,1,0,0,0,0,-2 m0,37 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,4 l-5,5 l-4,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 m-37,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 l-80,0 l-4,4 l-100,0 l-4,-4 l-75,0
+	M0,144 l14,0 l6,-6 l0,-95 l25,-25 l0,-18
+	M0,25 l24,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 m47,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 l3,0 l10,10 l86,0 l10,-10 l150,0
+	M330,139 l-43,0 l-17,17 l0,54
+	M280,36 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,30 l30,30 l0,32 a1,1,0,0,0,0,2 a1,1,0,0,0,0,-2 m0,37 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,6 l-8,8 l-6,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 m-37,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 l-78,0 l-4,4 l-104,0 l-4,-4 l-77,0
+	M0,149 l17,0 l8,-8 l0,-96 l25,-25 l0,-110
+	M0,20 l29,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 m42,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 l5,0 l10,10 l82,0 l10,-10 l152,0
+	M330,144 l-41,0 l-14,14 l0,52
+	M285,36 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,28 l30,30 l0,34 a1,1,0,0,0,0,2 a1,1,0,0,0,0,-2 m0,37 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,8 l-11,11 l-8,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 m-37,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 l-76,0 l-4,4 l-108,0 l-4,-4 l-79,0
+	M0,154 l20,0 l10,-10 l0,-97 l25,-25 l0,-112
+	M70,0 l0,7 l18,18 l78,0 l10,-10 l154,0
+	M330,149 l-39,0 l-11,11 l0,50
+	M290,36 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,26 l30,30 l0,36 a1,1,0,0,0,0,2 a1,1,0,0,0,0,-2 m0,37 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,10 l-14,14 l-10,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 m-37,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 l-74,0 l-4,4 l-112,0 l-4,-4 l-81,0
+	M0,159 l23,0 l12,-12 l0,-98 l25,-25 l0,-114
+	M75,0 l0,5 l15,15 l74,0 l10,-10 l156,0
+	M330,154 l-37,0 l-8,8 l0,48
+	M295,36 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,24 l30,30 l0,38 a1,1,0,0,0,0,2 a1,1,0,0,0,0,-2 m0,37 a1,1,0,0,0,0,-2 a1,1,0,0,0,0,2 l0,12 l-17,17 l-12,0 a1,1,0,0,0,-2,0 a1,1,0,0,0,2,0 m-37,0 a1,1,0,0,0,2,0 a1,1,0,0,0,-2,0 l-72,0 l-4,4 l-116,0 l-4,-4 l-83,0
+	M0,164 l26,0 l14,-14 l0,-99 l25,-25 l0,-116
+	M80,0 l0,3 l12,12 l70,0 l10,-10 l158,0
+	M330,159 l-35,0 l-5,5 l0,56
+	" fill="none" stroke="#D0A20C" stroke-width="2"/>
+
+	<g stroke="#FF6" fill="#FF6" stroke-width="2">
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-18.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-0.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-4.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-30.4s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-7.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-1.4s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-16.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-4.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-37.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-30.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-19.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-24.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-4.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-3.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-6.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-34.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-12.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-39.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="9.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-16.4s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-5.4s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-29.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-16.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-37.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-1.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-3.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-9.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-7.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-26.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-14.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-18.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-21.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-12.0s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-32.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-39.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-17.8s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-11.4s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-35.2s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-23.4s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+		<path d="M0.5,0 a0.5,0.5,0,0,0,-0.5,-0.5 a0.5,0.5,0,1,0,0.5,0.5">
+			<animateMotion dur="40s" begin="-11.6s" repeatCount="indefinite">
+				<mpath href="#a"/>
+			</animateMotion>
+		</path>
+	</g>
+	
+	<path d="M128.75 60 m59 0-59 94 33 5a70 82 0 0 1 26-51v-48m6 0 60 94-34 5a70 82 0 0 0-26-51v-48" transform="matrix(0.8, 0, 0, 0.8, 12.5, 10)" fill="#fff"/>
+</svg>
