@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<filter id="bevel" x="-10%" y="-10%" width="150%" height="150%">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"/>
+			<feSpecularLighting in="blur" surfaceScale="1" specularConstant="0.8" specularExponent="100" result="specOut" lighting-color="#FFF">
+				<fePointLight x="238" y="550" z="30"/>
+			</feSpecularLighting>
+			<feComposite in="specOut" in2="SourceAlpha" operator="in" result="bevelSpecOut"/>
+			<feComposite in="SourceGraphic" in2="bevelSpecOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" />
+		</filter>
+		
+		<filter id="dropshadow" x="0" y="0" width="200%" height="200%">
+			<feDropShadow dx="1" dy="1" stdDeviation="1" />
+		</filter>
+		
+		<filter id="metallic" x="0" y="0" width="1" height="1">
+			<feTurbulence type="fractalNoise" baseFrequency="0.2 0.2" numOctaves="1" seed="0" result="turbulence"/>
+			<feComposite in="SourceGraphic" in2="turbulence" operator="in" result="composite1"/>
+			<feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 3.1 -0.7 " result="color"/>
+			<feFlood flood-opacity="1" flood-color="#544848" result="flood" />
+			<feMerge result="merge">
+				<feMergeNode in="flood"/>
+				<feMergeNode in="color"/>
+			</feMerge>
+			<feComposite in2="SourceGraphic" operator="in"/>
+		</filter>
+		
+		<filter id="glow">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur"/>
+			
+			<feSpecularLighting in="blur" surfaceScale="1" specularConstant="0.8" specularExponent="20" result="glowOutOrange" lighting-color="#820">
+				<fePointLight x="238" y="404.8" z="200"/>
+			</feSpecularLighting>
+			<feSpecularLighting in="blur" surfaceScale="1" specularConstant="0.8" specularExponent="100" result="glowOutWhite" lighting-color="#FB9">
+				<fePointLight x="238" y="404.8" z="300"/>
+			</feSpecularLighting>
+			
+			<feComposite in="glowOutOrange" in2="SourceAlpha" operator="in" result="specOutOrange"/>
+			<feComposite in="glowOutWhite" in2="SourceAlpha" operator="in" result="specOutWhite"/>
+			
+			<feComposite in="SourceGraphic" in2="specOutOrange" operator="arithmetic" k1="0" k2="1" k3="15" k4="0" result="comp1"/>
+			<feComposite in="comp1" in2="specOutWhite" operator="arithmetic" k1="0" k2="1" k3="5" k4="0" />
+		</filter>
+		
+		<linearGradient id="background" gradientTransform="rotate(45)">
+			<stop offset="0.5" stop-color="#111"/>
+			<stop offset="1" stop-color="#200"/>
+		</linearGradient>
+		
+		<filter id="smoke" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur in="SourceGraphic" stdDeviation="300" result="blur"/>
+			<feTurbulence type="fractalNoise" baseFrequency="0.01" numOctaves="2" seed="0"/>
+			<feDisplacementMap in="blur" scale="500"/>
+		</filter>
+		
+		<linearGradient id="smokeColor" gradientTransform="rotate(45)">
+			<stop offset="0" stop-color="#C22" stop-opacity="0.3"/>
+			<stop offset="1" stop-color="#222" stop-opacity="0.3"/>
+		</linearGradient>
+		
+		<filter id="pathRandomise" x="0%" y="-50%" width="100%" height="200%">
+			<feTurbulence type="turbulence" baseFrequency="0.007 0.003" numOctaves="1" seed="0" result="verticalNoise" />
+			<feColorMatrix values="0 0 0 -10 0.5 0 0 0 -1 0.04 0 0 0 0 0 0 0 0 -10 1" in="verticalNoise" result="vertical"/>
+			
+			<feTurbulence type="turbulence" baseFrequency="0.004" numOctaves="1" seed="0" result="randomNoise"/>
+			<feColorMatrix values="0 0 0 -10 0.5 0 0 0 -1 0.04 0 0 0 0 0 0 0 0 -10 1" in="randomNoise" result="random"/>
+			
+			<feMerge result="merge">
+				<feMergeNode in="vertical"/>
+				<feMergeNode in="random"/>
+			</feMerge>
+		</filter>
+		
+		<mask id="sparkArea">
+			<linearGradient id="maskGradient" gradientTransform="rotate(90)">
+				<stop offset="0.1" stop-color="#000"/>
+				<stop offset="1" stop-color="#FFF"/>
+			</linearGradient>
+		
+			<rect width="100%" height="100%" fill="url(#maskGradient)"/>
+		</mask>
+		
+		<mask id="roundCorners">
+			<rect rx="200" ry="200" width="100%" height="100%" fill="white"/>
+		</mask>
+	</defs>
+
+	<g mask="url(#roundCorners)">
+		<rect fill="url(#background)" width="100%" height="100%"/>
+		<circle fill="url(#smokeColor)" filter="url(#smoke)" r="60%" cx="50%" cy="50%"/>
+		<circle fill="url(#smokeColor)" filter="url(#smoke)" r="40%" cx="50%" cy="50%"/>
+		<rect opacity="1" width="100%" height="100%" filter="url(#pathRandomise)" mask="url(#sparkArea)"/>
+	</g>
+	<g transform="translate(283.5,94.5)">
+		<g transform="scale(1.75)">
+			<g fill="#1F1C1C" filter="url(#metallic) url(#bevel) url(#glow) url(#dropshadow)">
+				<path d="m475.34,202.54h-33.47c-2.02-2.94,0-6.22,0-6.22h32.97c2.36-1.51-4.46-37.09-4.46-37.09h-27.67c-1.51-4.46,0-7.07,0-7.07h25.57c1.43-4.12-12.03-36.5-12.03-36.5h-21.53c-1.51-4.63,0-7.4,0-7.4h17.41c.34-5.89-19.18-35.66-19.18-35.66h-16.49c-1.77-5.3,0-7.99,0-7.99h8.24c-6.69-9.76-15.98-21.4-28.6-32.97-17.01-15.6-33.94-25.47-46.77-31.63,35.83,36,47.69,76.96,50.59,108.93,1.97,21.68-.06,40.48-3.15,54.93-3.54,12.66-10.49,31.83-24.88,51.43-11.94,16.28-24.5,26.7-33.5,33.52-35.32,26.76-59.82,31.21-100.38,49.5-40.56-18.29-65.07-22.74-100.38-49.5-9-6.82-21.55-17.24-33.5-33.52-14.39-19.6-21.34-38.77-24.88-51.43-3.09-14.45-5.12-33.25-3.15-54.93,2.9-31.96,14.76-72.93,50.59-108.93-12.82,6.16-29.76,16.03-46.77,31.63-12.62,11.57-21.91,23.21-28.6,32.97h8.24s1.77,2.69,0,7.99h-16.49s-19.51,29.78-19.18,35.66h17.41s1.51,2.78,0,7.4h-21.53s-13.46,32.38-12.03,36.5h25.57s1.51,2.61,0,7.07H5.68s-6.81,35.58-4.46,37.09h32.97s2.02,3.28,0,6.22H.72s-2.45,33.81,1.67,36.76h42.14s2.36,4.37-.34,7.07H3.32s5.89,34.32,9.42,36.93h52.65s4.96,6.64,0,6.64H15.1s12.36,38.02,17.92,37.09h150.72c-30.62,18.94-48.37,36.21-61.99,56.19-6.3,9.25-10.64,17.49-13.4,23.21h84.56c8.06-37.11,31.81-61.35,45.13-72.43,13.32,11.08,37.07,35.32,45.13,72.43h84.56c-2.76-5.72-7.1-13.97-13.4-23.21-13.62-19.98-31.38-37.25-61.99-56.19h150.72c5.55.93,17.92-37.09,17.92-37.09h-50.3c-4.96,0,0-6.64,0-6.64h52.65c3.53-2.61,9.42-36.93,9.42-36.93h-40.88c-2.69-2.69-.34-7.07-.34-7.07h42.14c4.12-2.94,1.67-36.76,1.67-36.76Z"/>
+			</g>
+		</g>
+	</g>
+</svg>
